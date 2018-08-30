@@ -45,7 +45,7 @@ public class MainController {
 		}
 	}
 
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String viewHome(Model model) {
 		return "welcomePage";
 	}
