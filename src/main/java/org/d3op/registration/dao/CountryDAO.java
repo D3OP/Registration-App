@@ -20,7 +20,6 @@ public class CountryDAO {
 	private static void initDATA() {
 
 		Country vn = new Country("VN", "Vietnam");
-		Country en = new Country("EN", "England");
 		Country fr = new Country("FR", "France");
 		Country us = new Country("US", "US");
 		Country ru = new Country("RU", "Russia");
@@ -29,7 +28,6 @@ public class CountryDAO {
 		Country jp = new Country("JP", "Japan");
 
 		COUNTRIES_MAP.put(vn.getCountryCode(), vn);
-		COUNTRIES_MAP.put(en.getCountryCode(), en);
 		COUNTRIES_MAP.put(fr.getCountryCode(), fr);
 		COUNTRIES_MAP.put(us.getCountryCode(), us);
 		COUNTRIES_MAP.put(ru.getCountryCode(), ru);
