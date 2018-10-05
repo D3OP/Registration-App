@@ -29,7 +29,7 @@ public class AppUserDAO {
 		String encrytedPassword = "";
 
 		AppUser admin = new AppUser(1L, "admin", "Administrator", "Admin", //
-				true, Gender.FEMALE, "admin@d3op.io", encrytedPassword, "US");
+				true, Gender.FEMALE, "admin@d3op.io", "US", encrytedPassword);
 
 		USERS_MAP.put(admin.getUserId(), admin);
 	}
@@ -77,7 +77,7 @@ public class AppUserDAO {
 
 		AppUser user = new AppUser(userId, form.getUserName(), //
 				form.getFirstName(), form.getLastName(), false, //
-				form.getGender(), form.getEmail(), form.getCountryCode(), //
+				form.getGender(), form.getEmail(), "US", //
 				encrytedPassword);
 
 		USERS_MAP.put(userId, user);
