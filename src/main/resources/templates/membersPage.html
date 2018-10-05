@@ -64,6 +64,7 @@ table th, table td {
 			<th>First Name</th>
 			<th>Last Name</th>
 			<th>Email</th>
+			<th>Country Code</th>
 			<th>Gender</th>
 		</tr>
 		<tr th:each="member : ${members}">
@@ -71,6 +72,7 @@ table th, table td {
 			<td th:utext="${member.firstName}">...</td>
 			<td th:utext="${member.lastName}">...</td>
 			<td th:utext="${member.email}">...</td>
+			<td th:utext="${member.countryCode}">...</td>
 			<td th:utext="${member.gender}">...</td>
 		</tr>
 	</table>
